@@ -5,17 +5,18 @@ public class ConverterMain {
         Scanner in = null;
 
         try {
-            in = new Scanner(System.in);
             System.out.println("Enter your string");
-            StringBuilder sb = new StringBuilder();
+            in = new Scanner(System.in);
     
             while (in.hasNextLine()) {
                 String input = in.nextLine().toLowerCase();
+                StringBuilder sb = new StringBuilder();
     
                 sb.append(input);
                 sb.append("\n");
     
                 System.out.println("Result: " + sb);
+                System.out.println("Enter your string");
             }
         } catch (Exception e) {
             e.printStackTrace();
